@@ -5,6 +5,11 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 header{
     background-color: #001233;
     height: 100%;
@@ -55,6 +60,7 @@ header h1{
 }
 
 .socialmedia1{
+    color: #023e8a;
     margin-top: 100px;
     float: right;
     margin-right: -260px;
@@ -62,6 +68,7 @@ header h1{
 }
 
 .socialmedia2{
+    color: #023e8a;
     margin-top: 100px;
     float: right;
     margin-right: -210px;
@@ -69,6 +76,7 @@ header h1{
 }
 
 .socialmedia3{
+    color: #023e8a;
     margin-top: 100px;
     float: right;
     margin-right: -163px;
@@ -76,6 +84,7 @@ header h1{
 }
 
 .socialmedia4{
+    color: #023e8a;
     margin-top: 105px;
     float: right;
     margin-right: -110px;
@@ -83,6 +92,7 @@ header h1{
 }
 
 .socialmedia5{
+    color: #023e8a;
     margin-top: 102px;
     float: right;
     margin-right: -60px;
@@ -90,10 +100,15 @@ header h1{
 }
 
 .socialmedia6{
+    color: #023e8a;
     margin-top: 102px;
     float: right;
     margin-right: -15px;
     font-size: 35px;
+}
+
+.socialmedia1:hover, .socialmedia2:hover, .socialmedia3:hover, .socialmedia4:hover, .socialmedia5:hover, .socialmedia6:hover{
+    color: #0466C8;
 }
 
 .comentarios{
@@ -146,25 +161,33 @@ header h1{
 }
 
 .img-xbox-a{
-    height: 180px;
-    width: 282px;
+    height: 140.63px;
+    width: 250px;
     border: 8px solid #001233;
     border-radius: 8px;
     float: right;
-    margin-top: -40px;
-    margin-right: 108px;
-
+    margin-top: -20px;
+    margin-right: 115px;
 }
 
 .img-xbox-b{
-    height: 180px;
-    width: 320px;
+    height: 140.63px;
+    width: 250px;
     border: 8px solid #001233;
     border-radius: 8px;
     float: right;
-    margin-top: 50px;
-    margin-right: 85px;
+    margin-top: -15px;
+    margin-right: 115px;
+}
 
+.img-xbox-c{
+    height: 140.63px;
+    width: 250px;
+    border: 8px solid #001233;
+    border-radius: 8px;
+    float: right;
+    margin-top: -35px;
+    margin-right: 115px;
 }
 
 .img-switch-a{
@@ -173,7 +196,7 @@ header h1{
     border: 8px solid #001233;
     border-radius: 8px;
     float: right;
-    margin-top: -70px;
+    margin-top: -40px;
     margin-right: 115px;
 
 }
@@ -184,7 +207,7 @@ header h1{
     border: 8px solid #001233;
     border-radius: 8px;
     float: right;
-    margin-top: -30px;
+    margin-top: -5px;
     margin-right: 115px;
 
 }
@@ -195,9 +218,19 @@ header h1{
     border: 8px solid #001233;
     border-radius: 8px;
     float: right;
-    margin-top: -30px;
+    margin-top: -10px;
     margin-right: 115px;
 
+}
+
+.img-pc-a{
+    height: 140.63px;
+    width: 250px;
+    border: 8px solid #001233;
+    border-radius: 8px;
+    float: right;
+    margin-top: -20px;
+    margin-right: 115px;
 }
 
 
@@ -229,6 +262,15 @@ header h1{
     margin-top: 55px;
     padding: 10px;
     padding-right: 2px;
+}
+
+.area-info3{
+    float: right;
+    background-color: #caf0f8;
+    border-radius: 4px;
+    margin-right: 80px;
+    margin-top: 35px;
+    padding: 10px;
 }
 
 
@@ -292,12 +334,29 @@ nav{
 }
 
 .link-item{
+    position: relative;
     text-decoration: none;
     color: #fff;
 }
 
+.link-item:before{
+    content: "";
+    background-color: #90e0ef;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s ease-out;
+}
+
+.link-item:hover:before{
+    width: 100%;
+}
+
 .link-item:hover{
-    text-decoration-line:underline;
+    transition: 0.3s;
+    color: #90e0ef;
 }
 
 .textarea-style{
@@ -518,6 +577,46 @@ footer{
     color: #0466C8;
 }
 
+.table-pc{
+   float: right;
+   margin-top: -50px;
+   margin-right: 50px;
+}
+
+.h4-table-comparison{
+    text-align: center;
+}
+
+.comparison-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.8em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.comparison-table thead tr{
+    background-color: #72efdd;
+    text-align: left;
+    font-weight: bold;
+}
+
+.comparison-table th , .comparison-table td{
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.comparison-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.subrayado{
+    background-color: #f3f3f3;
+    font-weight: bold;
+    color: #009878;
+}
+
 .footerps5{
     width: 100%;
     height: 70px ;
@@ -526,6 +625,26 @@ footer{
     text-align: center;
     padding-top: 2%;
     margin-top: 50px;
+}
+
+.arriba{
+
+    width: 60px;
+    height: 60px;
+    background-color: #0466C8;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 100%;
+    z-index: 99;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+}
+
+.flecha{
+    text-decoration: none;
+    color: #fff;
 }
 
 .footerswitch{
